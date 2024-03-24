@@ -39,9 +39,10 @@ export default function ProfileEdiTwo({ navigation }: HomeScreenProps) {
       <View style={styles.buttonContainer}>
         <Button
           title="Enter"
-          onPress={() => navigation.navigate("Details")}
-          color="white"
-        />
+           onPress={() => navigation.navigate("MainScreen")}
+          color={"white"}
+           
+         />
       </View>
     </View>
   );
@@ -104,3 +105,4 @@ const styles = StyleSheet.create({
     borderRadius: 10,
   },
 });
+

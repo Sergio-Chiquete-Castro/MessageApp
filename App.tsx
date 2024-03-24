@@ -14,6 +14,10 @@ import SignUpScreen from './signIn/SignUpScreen';
 import ProfileEditOne from './editProfile/ProfileEditOne';
 import ProfileEditTwo from './editProfile/ProfileEditTwo';
 
+//chatroom
+import WelcomeScreen from './chatroom/WelcomeScreen';
+import ChatroomScreen from './chatroom/ChatroomScreen';
+
 
 const Stack = createStackNavigator();
 
@@ -34,9 +38,11 @@ export default function App() {
 
         <Stack.Screen name="EditOne" component={ProfileEditOne}/>
         <Stack.Screen name="EditTwo" component={ProfileEditTwo}/>
-
+        <Stack.Screen name="MainScreen" component={WelcomeScreen}/>
+        <Stack.Screen name="ChatroomMenu" component={ChatroomScreen}/>
 
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
+
